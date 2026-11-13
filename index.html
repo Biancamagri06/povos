@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALDEIA SAPUKAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛖</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#enredo">História</a></li>
+      <li><a href="#personagens">Cultura</a></li>
+      <li><a href="#temas">Direitos &amp; Mata</a></li>
+      <li><a href="#autor">Dados Gerais</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header / Hero -->
+  <header class="hero" id="inicio">
+    <div class="ink-drops" id="inkDrops"></div>
+
+    <div class="hero-wall">
+      <svg viewBox="0 0 600 500" class="wall-svg" aria-hidden="true">
+        <defs>
+          <pattern id="brick" width="60" height="30" patternUnits="userSpaceOnUse">
+            <rect width="60" height="30" fill="none" stroke="#3a3a3a" stroke-width="1.5" opacity="0.6"/>
+            <line x1="0" y1="15" x2="60" y2="15" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+            <line x1="30" y1="0" x2="30" y2="15" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+            <line x1="0" y1="15" x2="0" y2="30" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+            <line x1="60" y1="15" x2="60" y2="30" stroke="#3a3a3a" stroke-width="1" opacity="0.4"/>
+          </pattern>
+          <radialGradient id="kissGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#cc4b2c" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#cc4b2c" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1a1a1a"/>
+            <stop offset="100%" stop-color="#0a0a0a"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="600" height="500" fill="url(#wallGrad)"/>
+        <rect width="600" height="500" fill="url(#brick)"/>
+
+        <!-- Crack lines -->
+        <path d="M120 80 L140 130 L130 180 L160 220" stroke="#2d2d2d" stroke-width="1.5" fill="none" opacity="0.5"/>
+        <path d="M450 60 L430 120 L440 170" stroke="#2d2d2d" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M300 350 L310 400 L290 430" stroke="#2d2d2d" stroke-width="1" fill="none" opacity="0.3"/>
+
+        <!-- The Kiss - painted lips -->
+        <g class="kiss-group">
+          <ellipse cx="300" cy="220" rx="80" ry="50" fill="url(#kissGlow)" opacity="0.4"/>
+          <path class="kiss-upper" d="M260 210 Q280 190 300 205 Q320 190 340 210 Q320 215 300 212 Q280 215 260 210Z" fill="#8b1a1a" opacity="0.85"/>
+          <path class="kiss-lower" d="M260 210 Q270 240 300 245 Q330 240 340 210 Q320 218 300 215 Q280 218 260 210Z" fill="#a32b2b" opacity="0.8"/>
+          <path class="kiss-shine" d="M285 205 Q295 200 300 205" stroke="#cc4b2c" stroke-width="1.5" fill="none" opacity="0.6"/>
+        </g>
+
+        <!-- Hand-drawn scribbles -->
+        <g class="scribbles" opacity="0.15">
+          <path d="M50 350 Q70 340 90 360 Q110 380 130 350" stroke="#d4b87a" stroke-width="1" fill="none"/>
+          <path d="M400 400 Q430 380 460 410 Q490 440 520 400" stroke="#d4b87a" stroke-width="1" fill="none"/>
+          <path d="M180 380 Q200 370 220 390" stroke="#d4b87a" stroke-width="1" fill="none"/>
+        </g>
+      </svg>
+
+      <div class="hero-text">
+        <h1 class="hero-title">ALDEIA<br><span>SAPUKAI</span></h1>
+        <p class="hero-subtitle">A maior comunidade indígena do estado do Rio de Janeiro</p>
+        <p class="hero-quote">"A Aldeia Sapukai (Tekoa Sapukai), pertencente ao povo Guarani Mbya, é um território vivo de cultura, resistência e preservação da Mata Atlântica em Angra dos Reis."</p>
+        <a href="#resumo" class="btn-scroll">Avançar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== INÍCIO / RESUMO ===== -->
+  <section class="section fade-section" id="resumo">
+    <div class="container">
+      <h2 class="section-title">ALDEIA SAPUKAI</h2>
+      <div class="resumo-content">
+        <div class="resumo-text">
+          <p class="texto-literario">
+            Localizada no distrito de Bracuí, em Angra dos Reis (RJ), a cerca de 6 km da rodovia BR-101, a aldeia é liderada pelo carismático cacique João da Silva Vera Mirim, o qual com seus 101 anos de idade e muita sabedoria estranha ainda alguns hábitos dos brancos. Acostumado a viver com a natureza e extrair da terra sua alimentação e as ervas para cura, conta que o dia no qual entrou em um supermercado pela primeira vez ficou desnorteado, sem saber o que era comida. Ele, que também é pajé, fala com simplicidade que “quando o índio está doente, vai na mata, colhe a planta e faz a infusão. Reza e toma quando quiser. Fica curado. Remédio de branco, só na hora certa e às vezes não cura.”
+          </p>
+          <p class="texto-literario">
+            Além de fazer os remédios, o pajé também é responsável pela escolha do nome das crianças. E tal qual um psicólogo escuta e estimula muita conversa para depois dar sábios conselhos.
+          </p>
+          <p class="texto-literario">
+            Na aldeia, as casas são simples e os principais cultivos são de mandioca, batata, banana, palmito pupunha, açaí e juçara, tudo para consumo próprio. A água pura que vem das nascentes possibilitou a construção de uma pequena represa para criação de tilápias.
+          </p>
+          <p class="texto-literario">
+            Quase todos na aldeia são bilíngues, porém a língua falada entre eles no dia a dia é o tupi-guarani.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE / HISTÓRIA ===== -->
+  <section class="section fade-section" id="enredo">
+    <div class="container">
+      <h2 class="section-title">HISTÓRIA E TERRITÓRIO</h2>
+      <p class="section-subtitle">A trajetória de resistência e conquista do Tekoa Sapukai</p>
+
+      <div class="timeline">
+        <div class="timeline-line" id="timelineLine"></div>
+
+        <div class="timeline-item left fade-slide" data-year="Origem">
+          <div class="timeline-marker">
+            <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <circle cx="20" cy="20" r="8" fill="#cc4b2c" opacity="0.6"/>
+              <path d="M12 28 L20 8 L28 28" stroke="#d4b87a" stroke-width="1.5" fill="none" opacity="0.5"/>
+              <text x="20" y="23" text-anchor="middle" fill="#d4b87a" font-size="8" font-family="Inter">Origem</text>
+            </svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">Ancestralidade</div>
+            <h3>Caminhos pela Serra do Mar</h3>
+            <p class="texto-literario">Muito antes da colonização portuguesa, a região da Costa Verde já era habitada e percorrida por povos Tupi-Guarani. Para os Guarani Mbya, caminhar pelo litoral e pelas montanhas da Mata Atlântica faz parte da tradição espiritual de busca pela <em>Yvy Marã Ey</em> — a "Terra Sem Males".</p>
+            <div class="timeline-icon-extras">
+              <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+                <path d="M0 40 L0 25 L8 25 L8 15 L16 15 L16 25 L24 25 L24 5 L32 5 L32 25 L40 25 L40 30 L48 30 L48 20 L56 20 L56 30 L60 30 L60 40 Z" fill="#2d2d2d" opacity="0.6"/>
+                <path d="M10 40 Q20 20 30 35 Q40 18 50 35 Q55 25 60 32" fill="none" stroke="#d4b87a" stroke-width="0.8" opacity="0.4"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right fade-slide" data-year="1986">
+          <div class="timeline-marker">
+            <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+              <path d="M14 14 L26 26 M26 14 L14 26" stroke="#8b1a1a" stroke-width="2"/>
+              <text x="20" y="23" text-anchor="middle" fill="#d4b87a" font-size="9" font-family="Inter">1986</text>
+            </svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">1986</div>
+            <h3>A Retomada no Bracuí</h3>
+            <p class="texto-literario">A ocupação contemporânea da Aldeia Sapukai teve início em 1986, quando famílias Guarani Mbya migraram da Ilha da Cotinga, em Paranaguá (PR), em direção ao litoral fluminense, estabelecendo-se na área montanhosa de Mata Atlântica do distrito de Bracuí, em Angra dos Reis (RJ).</p>
+            <div class="timeline-icon-extras">
+              <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+                <path d="M0 40 L0 30 L10 30 L10 20 L20 20 L20 30 L30 30 L30 15 L40 15 L40 30 L50 30 L50 25 L55 25 L55 30 L60 30 L60 40 Z" fill="#2d2d2d" opacity="0.6"/>
+                <path d="M5 40 Q15 30 25 38 Q35 28 45 36 Q50 32 55 38" fill="none" stroke="#8b1a1a" stroke-width="0.8" opacity="0.4"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left fade-slide" data-year="Terra">
+          <div class="timeline-marker">
+            <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <rect x="13" y="10" width="14" height="20" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+              <path d="M16 15 L24 15" stroke="#d4b87a" stroke-width="1"/>
+              <text x="20" y="23" text-anchor="middle" fill="#cc4b2c" font-size="8" font-family="Inter">Terra</text>
+            </svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2.200 Hectares</div>
+            <h3>Demarcação do Território</h3>
+            <p class="texto-literario">Após anos de mobilização das lideranças comunitárias, a Terra Indígena Guarani do Bracuí foi oficialmente demarcada. Hoje conta com aproximadamente 2.200 hectares protegidos, garantindo o espaço necessário para a sobrevivência física e cultural da comunidade.</p>
+            <div class="timeline-icon-extras">
+              <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+                <rect x="20" y="5" width="20" height="35" rx="2" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.5"/>
+                <path d="M22 10 L38 10 M22 15 L38 15 M22 20 L38 20 M22 25 L38 25" stroke="#d4b87a" stroke-width="0.5" opacity="0.3"/>
+                <path d="M5 40 Q15 25 30 38 Q45 25 55 35" fill="none" stroke="#cc4b2c" stroke-width="0.8" opacity="0.3"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right fade-slide" data-year="Marco">
+          <div class="timeline-marker">
+            <svg viewBox="0 0 40 40" class="timeline-icon" aria-hidden="true">
+              <circle cx="20" cy="20" r="18" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path class="heart-path" d="M20 14 C20 14 14 10 14 16 C14 20 20 26 20 26 C20 26 26 20 26 16 C26 10 20 14 20 14Z" fill="none" stroke="#cc4b2c" stroke-width="1.5"/>
+              <text x="20" y="23" text-anchor="middle" fill="#d4b87a" font-size="8" font-family="Inter">Marco</text>
+            </svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">Patrimônio Cultural</div>
+            <h3>Tombamento pelo INEPAC</h3>
+            <p class="texto-literario">A Aldeia Sapukai foi o primeiro território indígena tombado como patrimônio cultural pelo Instituto Estadual do Patrimônio Cultural (INEPAC) no estado do Rio de Janeiro, assegurando dupla proteção — ambiental e cultural — ao modo de vida Guarani.</p>
+            <div class="timeline-icon-extras">
+              <svg viewBox="0 0 60 40" class="city-svg" aria-hidden="true">
+                <path d="M0 40 L0 20 L8 20 L8 10 L16 10 L16 20 L24 20 L24 0 L32 0 L32 20 L40 20 L40 15 L48 15 L48 20 L56 20 L56 30 L60 30 L60 40 Z" fill="#2d2d2d" opacity="0.6"/>
+                <circle cx="30" cy="5" r="3" fill="#d4b87a" opacity="0.3"/>
+                <circle cx="25" cy="8" r="1.5" fill="#d4b87a" opacity="0.2"/>
+                <circle cx="35" cy="7" r="2" fill="#d4b87a" opacity="0.2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PILARES DA CULTURA ===== -->
+  <section class="section fade-section" id="personagens">
+    <div class="container">
+      <h2 class="section-title">Cultura e Espiritualidade</h2>
+      <p class="section-subtitle">Os pilares que mantêm viva a identidade Guarani Mbya na Sapukai</p>
+
+      <div class="characters-grid">
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="30" r="14" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M18 70 Q30 55 40 60 Q50 55 62 70" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M35 35 L45 45 M45 35 L35 45" stroke="#cc4b2c" stroke-width="1.5" opacity="0.6"/>
+              <rect x="35" y="46" width="10" height="14" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Nhanderekó</h3>
+          <span class="char-tag">Modo de Vida Guarani</span>
+          <p class="texto-literario">É o conjunto de valores, costumes, espiritualidade e respeito à natureza que define o modo tradicional de ser e viver do povo Guarani, orientando a convivência comunitária e o cuidado com a terra.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+              <path d="M18 70 Q30 55 40 60 Q50 55 62 70" fill="none" stroke="#8b1a1a" stroke-width="2"/>
+              <path d="M25 40 L55 40" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+              <rect x="25" y="44" width="8" height="16" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+              <rect x="47" y="44" width="8" height="16" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Casa de Oração (Opy)</h3>
+          <span class="char-tag">Espaço Sagrado de Rezo</span>
+          <p class="texto-literario">Coração espiritual da aldeia. Na casa de rezo (<em>Opy</em>), as lideranças espirituais conduzem cerimônias noturnas com cantos, danças tradicionais e o uso do <em>petyngua</em> (cachimbo sagrado), fortalecendo os laços da comunidade.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M18 70 Q30 50 40 55 Q50 50 62 70" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M32 32 Q40 38 48 32" fill="none" stroke="#cc4b2c" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Nhemongarai</h3>
+          <span class="char-tag">Cerimônia de Batismo</span>
+          <p class="texto-literario">Ritual tradicional realizado no tempo da colheita do milho sagrado (<em>avaxi ete</em>), momento em que o pajé e as lideranças espirituais revelam o nome verdadeiro em guarani de cada criança.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M18 70 Q30 52 40 58 Q50 52 62 70" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M28 40 L52 40" stroke="#cc4b2c" stroke-width="1.5"/>
+              <circle cx="32" cy="38" r="2" fill="#cc4b2c" opacity="0.5"/>
+              <circle cx="48" cy="38" r="2" fill="#cc4b2c" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Coral Nhamandu</h3>
+          <span class="char-tag">Música e Resistência</span>
+          <p class="texto-literario">Formado por crianças e jovens da Sapukai, o Coral Nhamandu divulga os cantos tradicionais Guarani em escolas e eventos culturais, combatendo estereótipos e valorizando a cultura indígena viva.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M18 70 Q30 48 40 56 Q50 48 62 70" fill="none" stroke="#d4b87a" stroke-width="2"/>
+              <path d="M30 30 Q40 25 50 30" fill="none" stroke="#d4b87a" stroke-width="1"/>
+              <path d="M35 36 L38 42 M45 36 L42 42" stroke="#d4b87a" stroke-width="1" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>Artesanato e Cestaria</h3>
+          <span class="char-tag">Economia e Arte</span>
+          <p class="texto-literario">Base importante da economia local. Os moradores produzem cestarias trançadas com taquara e tingidas com pigmentos naturais da mata, além de colares de sementes e animais esculpidos em madeira.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M18 70 Q30 58 40 62 Q50 58 62 70" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M30 40 L50 40" stroke="#3a3a3a" stroke-width="1.5"/>
+              <circle cx="40" cy="20" r="2" fill="#d4b87a" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Liderança Comunitária</h3>
+          <span class="char-tag">Sabedoria Ancestral</span>
+          <p class="texto-literario">A organização social da Sapukai baseia-se no diálogo coletivo e no respeito aos mais velhos. Caciques, pajés e lideranças jovens atuam juntos na defesa do território e na preservação das tradições.</p>
+        </div>
+
+        <div class="char-card fade-slide">
+          <div class="char-icon">
+            <svg viewBox="0 0 80 80" aria-hidden="true">
+              <circle cx="40" cy="28" r="14" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M18 70 Q30 60 40 64 Q50 60 62 70" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M28 35 L52 35" stroke="#3a3a3a" stroke-width="1.5"/>
+              <rect x="33" y="40" width="14" height="10" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Língua Materna</h3>
+          <span class="char-tag">Identidade Viva</span>
+          <p class="texto-literario">O guarani é o idioma materno falado cotidianamente por crianças, jovens e adultos dentro da aldeia, garantindo a transmissão dos saberes ancestrais e fortalecendo a identidade cultural do povo Mbya.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMAS / DIREITOS E SUSTENTABILIDADE ===== -->
+  <section class="section fade-section" id="temas">
+    <div class="container">
+      <h2 class="section-title">Direitos e Sustentabilidade</h2>
+      <p class="section-subtitle">Educação trilíngue, saúde comunitária e preservação da Mata Atlântica</p>
+
+      <div class="temas-grid">
+
+        <div class="tema-card fade-slide">
+          <div class="tema-icon">
+            <svg viewBox="0 0 60 60" aria-hidden="true">
+              <circle cx="30" cy="30" r="26" fill="none" stroke="#3a3a3a" stroke-width="2"/>
+              <path d="M20 20 L40 40 M40 20 L20 40" stroke="#8b1a1a" stroke-width="2"/>
+              <circle cx="30" cy="30" r="8" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Educação Trilíngue</h3>
+          <p class="texto-literario">A comunidade possui o <em>Colégio Indígena Estadual Karai Kuery Renda</em>, onde a alfabetização inicial ocorre na própria língua guarani. A escola oferece ensino trilíngue e intercultural, integrando os saberes tradicionais ao currículo.</p>
+        </div>
+
+        <div class="tema-card fade-slide">
+          <div class="tema-icon">
+            <svg viewBox="0 0 60 60" aria-hidden="true">
+              <circle cx="30" cy="30" r="18" fill="none" stroke="#2d2d2d" stroke-width="2"/>
+              <path d="M20 20 L40 40" stroke="#d4b87a" stroke-width="2" opacity="0.6"/>
+              <path d="M24 18 L28 28 M36 32 L40 42" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+              <circle cx="12" cy="12" r="3" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="48" cy="48" r="3" fill="none" stroke="#8b1a1a" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Saúde Comunitária</h3>
+          <p class="texto-literario">A aldeia conta com uma Unidade Básica de Saúde (UBS) local e iniciativas de atendimento médico voltadas especificamente às necessidades da comunidade, respeitando as práticas tradicionais de cuidado com ervas da mata.</p>
+        </div>
+
+        <div class="tema-card fade-slide">
+          <div class="tema-icon">
+            <svg viewBox="0 0 60 60" aria-hidden="true">
+              <circle cx="30" cy="30" r="26" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+              <rect x="18" y="10" width="24" height="18" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.6"/>
+              <path d="M22 14 L38 14 M22 18 L38 18 M22 22 L30 22" stroke="#d4b87a" stroke-width="0.8" opacity="0.4"/>
+              <path d="M30 10 L30 6 M24 6 L36 6" stroke="#d4b87a" stroke-width="1.5"/>
+              <path d="M15 40 Q30 30 45 40" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Agricultura Tradicional</h3>
+          <p class="texto-literario">A subsistência das famílias baseia-se no cultivo sustentável de mandioca, batata-doce, banana, milho, palmito pupunha, açaí e juçara, além da criação de tilápias abastecida pelas águas puras das nascentes locais.</p>
+        </div>
+
+        <div class="tema-card fade-slide">
+          <div class="tema-icon">
+            <svg viewBox="0 0 60 60" aria-hidden="true">
+              <circle cx="30" cy="30" r="26" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <path d="M15 35 Q30 20 45 35" fill="none" stroke="#cc4b2c" stroke-width="2"/>
+              <circle cx="20" cy="28" r="3" fill="#cc4b2c" opacity="0.4"/>
+              <circle cx="30" cy="24" r="3" fill="#cc4b2c" opacity="0.6"/>
+              <circle cx="40" cy="28" r="3" fill="#cc4b2c" opacity="0.4"/>
+              <path d="M30 38 L30 46 M26 42 L34 42" stroke="#cc4b2c" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Regeneração Ambiental</h3>
+          <p class="texto-literario">Os moradores realizam um forte trabalho de preservação e regeneração ambiental na Mata Atlântica, atuando no reflorestamento, na proteção de nascentes e no manejo sustentável de espécies nativas em Angra dos Reis.</p>
+        </div>
+
+      </div>
+
+      <!-- Decorative SVG -->
+      <div class="quixote-container fade-slide">
+        <svg viewBox="0 0 200 280" class="quixote-svg" aria-label="Ilustração simbólica">
+          <rect x="80" y="80" width="40" height="60" rx="4" fill="none" stroke="#d4b87a" stroke-width="2" opacity="0.7"/>
+          <rect x="75" y="90" width="10" height="30" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.5"/>
+          <rect x="115" y="90" width="10" height="30" rx="2" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.5"/>
+          <circle cx="100" cy="60" r="20" fill="none" stroke="#d4b87a" stroke-width="2"/>
+          <ellipse cx="100" cy="45" rx="14" ry="8" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+          <line x1="90" y1="140" x2="85" y2="200" stroke="#d4b87a" stroke-width="2"/>
+          <line x1="110" y1="140" x2="115" y2="200" stroke="#d4b87a" stroke-width="2"/>
+          <line x1="85" y1="200" x2="80" y2="210" stroke="#d4b87a" stroke-width="1.5"/>
+          <line x1="115" y1="200" x2="120" y2="210" stroke="#d4b87a" stroke-width="1.5"/>
+          <g class="lance-group">
+            <line x1="130" y1="50" x2="180" y2="10" stroke="#cc4b2c" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="170" y1="4" x2="185" y2="12" stroke="#cc4b2c" stroke-width="1.5"/>
+            <line x1="170" y1="16" x2="185" y2="8" stroke="#cc4b2c" stroke-width="1.5"/>
+          </g>
+          <ellipse cx="70" cy="110" rx="10" ry="16" fill="none" stroke="#d4b87a" stroke-width="1.5" opacity="0.5" transform="rotate(-15 70 110)"/>
+          <g class="windmill-ref" opacity="0.2">
+            <line x1="30" y1="140" x2="30" y2="210" stroke="#d4b87a" stroke-width="1"/>
+            <line x1="30" y1="140" x2="50" y2="130" stroke="#d4b87a" stroke-width="1"/>
+            <line x1="30" y1="140" x2="15" y2="125" stroke="#d4b87a" stroke-width="1"/>
+            <line x1="30" y1="140" x2="10" y2="145" stroke="#d4b87a" stroke-width="1"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DADOS GERAIS / PANORAMA ===== -->
+  <section class="section fade-section" id="autor">
+    <div class="container">
+      <h2 class="section-title">Panorama da Comunidade</h2>
+
+      <div class="autor-content fade-slide">
+        <div class="autor-photo">
+          <svg viewBox="0 0 200 240" class="autor-svg" aria-label="Representação cultural Guarani">
+            <circle cx="100" cy="90" r="65" fill="none" stroke="#cc4b2c" stroke-width="2" opacity="0.3"/>
+            <ellipse cx="100" cy="70" rx="28" ry="32" fill="none" stroke="#d4b87a" stroke-width="2"/>
+            <path d="M72 60 Q72 35 100 30 Q128 35 128 60" fill="none" stroke="#d4b87a" stroke-width="2"/>
+            <path d="M76 55 Q80 40 100 36 Q120 40 124 55" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.5"/>
+            <circle cx="90" cy="65" r="3" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            <circle cx="110" cy="65" r="3" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            <path d="M95 75 Q100 80 105 75" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+            <path d="M65 120 Q80 110 100 110 Q120 110 135 120" fill="none" stroke="#d4b87a" stroke-width="2"/>
+            <path d="M65 120 L55 160" stroke="#d4b87a" stroke-width="2"/>
+            <path d="M135 120 L145 160" stroke="#d4b87a" stroke-width="2"/>
+            <rect x="82" y="170" width="36" height="48" rx="3" fill="none" stroke="#cc4b2c" stroke-width="1.5" opacity="0.6"/>
+            <line x1="100" y1="170" x2="100" y2="218" stroke="#cc4b2c" stroke-width="1" opacity="0.6"/>
+            <rect x="72" y="178" width="8" height="12" rx="1" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+            <path d="M108 185 L120 175 L125 178 L112 190 Z" fill="none" stroke="#d4b87a" stroke-width="1" opacity="0.4"/>
+            <text x="40" y="50" fill="#d4b87a" font-size="8" font-family="Inter" opacity="0.2" transform="rotate(-15 40 50)">tekoa</text>
+            <text x="130" y="40" fill="#d4b87a" font-size="6" font-family="Inter" opacity="0.15" transform="rotate(10 130 40)">guarani</text>
+            <text x="150" y="100" fill="#d4b87a" font-size="7" font-family="Inter" opacity="0.15" transform="rotate(-8 150 100)">sapukai</text>
+          </svg>
+        </div>
+
+        <div class="autor-info">
+          <h3>Tekoa Sapukai — Angra dos Reis (RJ)</h3>
+          <p class="texto-literario">
+            Situada no distrito de Bracuí, em uma região montanhosa de Mata Atlântica a cerca de 6 km da rodovia BR-101, a Aldeia Sapukai abriga entre 339 e 600 moradores distribuídos em aproximadamente 80 famílias, segundo os dados mais recentes do IBGE e estimativas das lideranças locais.
+          </p>
+          <p class="texto-literario">
+            Além de preservar o <em>Nhanderekó</em>, a comunidade recebe grupos escolares e visitantes mediante agendamento prévio com as lideranças, promovendo o diálogo intercultural e a valorização dos povos originários.
+          </p>
+          <div class="autor-destaques">
+            <div class="destaque-item">
+              <span class="destaque-num">2.200</span>
+              <span class="destaque-label">Hectares demarcados<br><em>Mata Atlântica protegida</em></span>
+            </div>
+            <div class="destaque-item">
+              <span class="destaque-num">339–600</span>
+              <span class="destaque-label">Moradores na aldeia<br><em>Cerca de 80 famílias</em></span>
+            </div>
+            <div class="destaque-item">
+              <span class="destaque-num">6 km</span>
+              <span class="destaque-label">Da rodovia BR-101<br>Distrito de Bracuí, RJ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Aldeia Sapukai (Tekoa Sapukai) | Bracuí, Angra dos Reis – RJ.</p>
+      <p class="footer-quote">"Preservar o território indígena é preservar a floresta, a memória e a vida."</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
