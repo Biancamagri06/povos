@@ -842,3 +842,8 @@ a {
     padding: 4rem 0 3rem;
   }
 }
+
+footer p{
+  text-align: center;
+  width: 100%;
+}
